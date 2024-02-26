@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Eduardo Acuña</title>
+    <link rel="icon" href="/img/Imagen2.png">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!-- MENU DE 'ENCABEZADO' -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <i class="fa-sharp fa-solid fa-laptop-code"></i>
+                
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            
+                    <li><a href="#porfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-resposive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION DE 'INICIO' -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img src="img/Imagen2.png" alt="">
+            </div>
+            <h1>Eduardo Acuña G</h1>
+
+            <div class="redes">
+
+                <a href="https://www.linkedin.com/in/eduardo-acu%C3%B1a-gonzalez-525560235/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Eduardo-Acuna" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://wa.link/owdhf1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION 'SOBRE MI' -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí...</h2>
+            <p>¡Hola! Soy <span>Eduardo Acuña Gonzalez</span>, estudiante de la carrera de Ing. Informática en la Facultad Politécnica UNA.</p>
+            <p>Actualmente, mis lenguajes principales son JavaScript, CSS y HTML 5, pero siempre busco ampliar mis conocimientos formándome como Full-Stack Developer de la mano de Open Bootcamp. </p>
+            <p>Empecé a programar a los 17 años, mi interés comenzó cuando quería saber cómo se construían las aplicaciones móviles y páginas web. Desde ese entonces me considero una persona autodidacta y amante de la informática.</p>
+            <br>
+            <div class="fila">
+                <!-- Datos Personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>19 de abril
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>+595 972 384 741
+                        </li>
+                        <li>
+                            <strong>Email:</strong>eduardoacunag2020@gmail.com
+                        </li>
+                        <li>
+                            <strong>Pais:</strong>Paraguay
+                        </li>
+                        <li>
+                            <strong>Ciudad:</strong>Capiatá, Dpto. Central.
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong><span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Habilidades Técnica</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML 5</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <span>Booptstrap</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-file-pen"></i>
+
+                            <span>Corel Draw</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="descargarCV" onclick="descargarCV()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            
+        </div>
+    </section>
+
+
+     <!-- SECCION 'TRABAJO' -->
+     <!--
+    <section class="trabajos" id="porfolio">
+        <div class="galeria">
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#login" > <h4>Portafolio</h4></a></li>
+                <li><a href="#registro" data-toggle="tab">Certificado</a></li>
+            </ul>
+
+            <br>
+
+
+
+            
+                <div id="login" class="tab-pane fade in active">
+                    <div class="item">
+                        <img src="img/calculadora.png" alt="">
+                        <div class="info">
+                            <h3>Calculadora</h3>
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            <a href="https://6459ad854c03c8054b2f2248--neon-sundae-68d038.netlify.app/">Ver Trabajo</a>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <img src="img/clima.png" alt="">
+                        <div class="info">
+                            <h3>App de Clima</h3>
+                            <span>html</span><span>css</span><span>javascript</span>
+                            <a href="https://6459ae7bfaee9309920585b4--profound-eclair-40be41.netlify.app/">Ver Trabajo</a>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <img src="img/lista-de-tarea.png" alt="">
+                        <div class="info">
+                            <h3>Lista de tareas</h3>
+                            <span>html</span><span>css</span><span>javascript</span>
+                            <a href="https://6459adc69eab2a09760c3d6c--chipper-tarsier-61ff41.netlify.app/">Ver Trabajo</a>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <img src="img/operaciones.png" alt="">
+                        <div class="info">
+                            <h3>Operaciones Geometricas</h3>
+                            <span>html</span><span>css</span><span>javascript</span>
+                            <a href="https://6459ac794c03c805272f2011--dainty-quokka-7b7c86.netlify.app/">Ver Trabajo</a>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="item">
+                        <img src="img/portafolio.png" alt="">
+                        <div class="info">
+                            <h3>Portafolio</h3>
+                            <span>html</span><span>css</span><span>javascript</span>
+                            <a href="#">Ver Trabajo</a>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <div id="registro" class="tab-pane fade">
+
+                </div>
+            
+
+
+     
+
+        
+        
+
+            
+
+
+
+        </div>
+        <br>
+    </section>
+    -->
+    <section class="trabajos" id="porfolio">
+    
+
+        <nav>
+            <a href="javascript:void(0)" class="" id="portafolio" onclick="verCategoria('portafolio')"><h4>Porfolio</h4></a>
+            <a href="javascript:void(0)" class="" id="certificado" onclick="verCategoria('certificado')"><h4>Certificados</h4></a>
+        </nav>
+
+        <div class="galeria">
+        <div class="item portafolio">
+            <img src="img/calculadora.png" alt="">
+            <div class="item programacion">
+                <h3>Calculadora</h3>
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                <a href="https://6459ad854c03c8054b2f2248--neon-sundae-68d038.netlify.app/">Ver Trabajo</a>
+            </div>
+        </div>
+
+        
+        <div class="item  portafolio">
+            <img src="img/clima.png" alt="">
+            <div class="info">
+                <h3>App de Clima</h3>
+                <span>html</span><span>css</span><span>javascript</span>
+                <a href="https://6459ae7bfaee9309920585b4--profound-eclair-40be41.netlify.app/">Ver Trabajo</a>
+            </div>
+        </div>
+
+        <div class="item  portafolio">
+            <img src="img/lista-de-tarea.png" alt="">
+            <div class="info">
+                <h3>Lista de tareas</h3>
+                <span>html</span><span>css</span><span>javascript</span>
+                <a href="https://6459adc69eab2a09760c3d6c--chipper-tarsier-61ff41.netlify.app/">Ver Trabajo</a>
+            </div>
+        </div>
+
+        <div class="item  portafolio">
+            <img src="img/operaciones.png" alt="">
+            <div class="info">
+                <h3>Operaciones Geometricas</h3>
+                <span>html</span><span>css</span><span>javascript</span>
+                <a href="https://6459ac794c03c805272f2011--dainty-quokka-7b7c86.netlify.app/">Ver Trabajo</a>
+            </div>
+        </div>
+
+        
+        <div class="item portafolio">
+            <img src="img/portafolio.png" alt="">
+            <div class="info">
+                <h3>Portafolio</h3>
+                <span>html</span><span>css</span><span>javascript</span>
+                <a href="#">Ver Trabajo</a>
+            </div>
+        </div>
+    </div>
+         <!--  
+        <div class="galeria">
+            <div class="item disenio">
+                <img src="img/trabajo1.png" alt="">
+                <div class="item programacion">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+
+
+            <div class="item programacion">
+                <img src="img/trabajo2.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="img/trabajo3.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="img/trabajo4.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item animaciones">
+                <img src="img/trabajo5.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/trabajo6.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item disenio">
+                <img src="img/trabajo7.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/trabajo8.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item programacion">
+                <img src="img/trabajo9.png" alt="">
+                <div class="info">
+                    <h3>Titulo del Trabajo</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>-->  
+    </section>
+
+    <!-- SECCION 'CONTACTO' -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+
+            <div class="fila">
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115360.07660610552!2d-57.45762704999999!3d-25.37123625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945dad6fda53e6c3%3A0xd38ca80a0d2896ac!2zQ2FwaWF0w6E!5e0!3m2!1ses-419!2spy!4v1672438253533!5m2!1ses-419!2spy"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+             
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Paraguay, Capiata Ruta PY02 km. 24
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +595 972 384 741
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                eduardoacunag2020@gmail.com
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCION 'FOOTER' -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-sharp fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+
+            <a href="https://www.linkedin.com/in/eduardo-acu%C3%B1a-gonzalez-525560235/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Eduardo-Acuna" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.link/owdhf1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p>CC BY-NC</p>
+        <h3>Powered by Eduardo Acuña Gonzalez</h3>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
